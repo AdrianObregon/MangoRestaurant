@@ -14,7 +14,7 @@ namespace Mango.Services.ProductAPI.Controllers
         public ProductAPIController(IProductRepository productRepository)
         {
             _productRepository = productRepository;
-            this._response = new ResponseDTO();//Para no tener que instanciar constantemente
+            this._response = new ResponseDTO();
         }
         [HttpGet]
         public async Task<ResponseDTO> Get()
